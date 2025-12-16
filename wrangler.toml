@@ -1,0 +1,11 @@
+name = "secret-santa-bot"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+# BOT_TOKEN is set via secrets: wrangler secret put BOT_TOKEN
+
+[[d1_databases]]
+binding = "DB"
+database_name = "secret-santa-db"
+database_id = "local" # Replace with actual ID after creation
